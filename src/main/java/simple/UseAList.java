@@ -1,5 +1,6 @@
 package simple;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,6 +17,11 @@ public class UseAList {
         //breakAList(names);
         String name = names.get(0);
         System.out.println(name);
+        boolean b = true;
+        //Serializable & Comparable obj = b?"Hello": 99;
+        var obj = b?"Hello": 99;
+
+        //obj.compareTo() available now
     }
 
     //Old code, will break at runtime.
